@@ -46,11 +46,11 @@ public class Page {
 	
 	public static void initConfiguration(){
 		
-		if(Constants.browser.equals("firefox")){
+		if(Constants.browser_updated.equals("firefox")){
 			
 			driver = new FirefoxDriver();
 			log.debug("Launching Firefox");
-		}else if(Constants.browser.equals("chrome")){
+		}else if(Constants.browser_updated.equals("chrome")){
 			
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
@@ -66,7 +66,7 @@ public class Page {
 
 			driver = new ChromeDriver(options);
 			log.debug("Launching Chrome");
-		}else if(Constants.browser.equals("ie")){
+		}else if(Constants.browser_updated.equals("ie")){
 			
 			System.setProperty("webdriver.ie.driver",
 					System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\IEDriverServer.exe");
