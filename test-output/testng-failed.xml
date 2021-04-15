@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Page Object Model with Page Factories]">
-  <listeners>
-    <listener class-name="com.w2a.listeners.CustomListeners"/>
-    <listener class-name="com.w2a.errorcollectors.TestListenerAdapter"/>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-  </listeners>
-  <test name="Flight Search Test(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.w2a.testcases.FlightSearchTest">
+      <class name="tests.TestMultiForm_Cucumber_Runner">
         <methods>
-          <include name="tearDown"/>
-          <include name="flightSearchTest"/>
-          <include name="setUp"/>
+          <include name="runScenario"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.w2a.testcases.FlightSearchTest -->
+      </class> <!-- tests.TestMultiForm_Cucumber_Runner -->
     </classes>
-  </test> <!-- Flight Search Test(failed) -->
-</suite> <!-- Failed suite [Page Object Model with Page Factories] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

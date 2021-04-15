@@ -1,6 +1,50 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Page Object Model with Page Factories</th></tr><tr><td><a href="#t0">Sign in Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">29,423</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">Flight Search Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">30,337</td><td></td><td></td></tr><tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num attn">1</th><th class="num">59,760</th><th colspan="2"></th></tr></table><table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Page Object Model with Page Factories</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Sign in Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.w2a.testcases.SignInTest</td><td><a href="#m0">signInTest</a></td><td rowspan="1">1513841204574</td><td rowspan="1">10652</td></tr></tbody><tbody id="t1"><tr><th colspan="4">Flight Search Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.w2a.testcases.FlightSearchTest</td><td><a href="#m1">flightSearchTest</a></td><td rowspan="1">1513841235471</td><td rowspan="1">10170</td></tr></tbody></table><h2>Sign in Test</h2><h3 id="m0">com.w2a.testcases.SignInTest#signInTest</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Flight Search Test</h2><h3 id="m1">com.w2a.testcases.FlightSearchTest#flightSearchTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Click to see Screenshot<br/><a target="_blank" href=Thu_Dec_21_12_57_26_IST_2017.jpg>Screenshot</a><br/><br><br/><br><br/><a target="_blank" href=Thu_Dec_21_12_57_26_IST_2017.jpg><img src=Thu_Dec_21_12_57_26_IST_2017.jpg height=200 width=200></img></a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [7] but found [6]
-	at com.w2a.errorcollectors.ErrorCollector.assertEquals(ErrorCollector.java:38)
-	at com.w2a.errorcollectors.ErrorCollector.verifyEquals(ErrorCollector.java:102)
-	at com.w2a.testcases.FlightSearchTest.flightSearchTest(FlightSearchTest.java:29)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">18.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">tests.TestMultiForm_Cucumber_Runner</td><td><a href="#m1"><b>runScenario</b>  ("Scenario Name: ")</a></td><td class="numi">1</td><td>1618489940183</td><td class="numi">8767</td></tr>
+</table>
+<h1>Default test</h1>
+<h2 id="m1">tests.TestMultiForm_Cucumber_Runner:runScenario</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>&quot;Verify MultiForm	 Page&quot;</td>
+<td>&quot;Optional[SampleAutomation Feature Tests]&quot;</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
