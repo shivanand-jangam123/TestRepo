@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18727" started-at="2021-04-15T12:32:12Z" finished-at="2021-04-15T12:32:31Z">
+  <suite name="Default suite" duration-ms="29738" started-at="2021-04-15T15:04:16Z" finished-at="2021-04-15T15:04:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18727" started-at="2021-04-15T12:32:12Z" finished-at="2021-04-15T12:32:31Z">
+    <test name="Default test" duration-ms="29738" started-at="2021-04-15T15:04:16Z" finished-at="2021-04-15T15:04:46Z">
       <class name="tests.TestMultiForm_Cucumber_Runner">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.TestMultiForm_Cucumber_Runner@6d7b4f4c]" name="beforeClass" is-config="true" duration-ms="1570" started-at="2021-04-15T18:02:12Z" finished-at="2021-04-15T18:02:14Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.TestMultiForm_Cucumber_Runner@6d7b4f4c]" name="beforeClass" is-config="true" duration-ms="735" started-at="2021-04-15T20:34:16Z" finished-at="2021-04-15T20:34:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.TestMultiForm_Cucumber_Runner@6d7b4f4c]" name="openBrowser" is-config="true" duration-ms="6034" started-at="2021-04-15T18:02:14Z" finished-at="2021-04-15T18:02:20Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.TestMultiForm_Cucumber_Runner@6d7b4f4c]" name="openBrowser" is-config="true" duration-ms="3806" started-at="2021-04-15T20:34:17Z" finished-at="2021-04-15T20:34:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, java.lang.Object)[pri:0, instance:tests.TestMultiForm_Cucumber_Runner@6d7b4f4c]" name="runScenario" duration-ms="8767" started-at="2021-04-15T18:02:20Z" description="Scenario Name: " data-provider="scenarios" finished-at="2021-04-15T18:02:28Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, java.lang.Object)[pri:0, instance:tests.TestMultiForm_Cucumber_Runner@6d7b4f4c]" name="runScenario" duration-ms="9339" started-at="2021-04-15T20:34:20Z" description="Scenario Name: " data-provider="scenarios" finished-at="2021-04-15T20:34:30Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify MultiForm	 Page"]]>
+                <![CDATA["Verify MultiForm	 Page1"]]>
               </value>
             </param>
             <param index="1">
@@ -31,11 +31,35 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.TestMultiForm_Cucumber_Runner@6d7b4f4c]" name="closeBrowser" is-config="true" duration-ms="1581" started-at="2021-04-15T18:02:28Z" finished-at="2021-04-15T18:02:30Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.TestMultiForm_Cucumber_Runner@6d7b4f4c]" name="closeBrowser" is-config="true" duration-ms="1583" started-at="2021-04-15T20:34:30Z" finished-at="2021-04-15T20:34:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.TestMultiForm_Cucumber_Runner@6d7b4f4c]" name="afterClass" is-config="true" duration-ms="744" started-at="2021-04-15T18:02:30Z" finished-at="2021-04-15T18:02:31Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.TestMultiForm_Cucumber_Runner@6d7b4f4c]" name="openBrowser" is-config="true" duration-ms="2987" started-at="2021-04-15T20:34:31Z" finished-at="2021-04-15T20:34:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, java.lang.Object)[pri:0, instance:tests.TestMultiForm_Cucumber_Runner@6d7b4f4c]" name="runScenario" duration-ms="9275" started-at="2021-04-15T20:34:34Z" description="Scenario Name: " data-provider="scenarios" finished-at="2021-04-15T20:34:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify MultiForm Page2"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[SampleAutomation Feature Tests]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.TestMultiForm_Cucumber_Runner@6d7b4f4c]" name="closeBrowser" is-config="true" duration-ms="1283" started-at="2021-04-15T20:34:44Z" finished-at="2021-04-15T20:34:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.TestMultiForm_Cucumber_Runner@6d7b4f4c]" name="afterClass" is-config="true" duration-ms="699" started-at="2021-04-15T20:34:45Z" finished-at="2021-04-15T20:34:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

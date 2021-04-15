@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="tests.TestMultiForm_Cucumber_Runner">
+      <class name="tests.TestSearchFilter">
         <methods>
-          <include name="runScenario"/>
-          <include name="beforeClass"/>
+          <include name="TestSearchByAccountAndExpenditurePayee"/>
+          <include name="TestSearchByPayee"/>
         </methods>
-      </class> <!-- tests.TestMultiForm_Cucumber_Runner -->
+      </class> <!-- tests.TestSearchFilter -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+	<test name="ChromeTest">
+		<classes>
+			<class name="tests.TestSearchFilter_TestNg" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

@@ -14,19 +14,19 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pages.searchfilterpages.SearchFilterPage;
 
-public class TestSearchFilter {
+public class TestSearchFilter_TestNg {
 
   WebDriver driver;
+
+  public static String browser = "chrome";
 
   SearchFilterPage objSearchFilterPage;
 
   @BeforeMethod
-  @Parameters("browser")
-  public void beforeMethod(String browser) throws Exception {
+  public void beforeMethod() throws Exception {
     System.setProperty("webdriver.chrome.driver",
         "C:\\Users\\shiva\\eclipse-workspace\\PracticeRepo\\src\\test\\resources\\drivers\\chromedriver.exe");
     if (browser.equalsIgnoreCase("firefox")) {
@@ -56,8 +56,7 @@ public class TestSearchFilter {
   }
 
   @BeforeClass
-  @Parameters("browser")
-  public void beforeClass(String browser) throws Exception {
+  public void beforeClass() throws Exception {
     System.setProperty("webdriver.chrome.driver",
         "C:\\Users\\shiva\\eclipse-workspace\\PracticeRepo\\src\\test\\resources\\drivers\\chromedriver.exe");
     if (browser.equalsIgnoreCase("firefox")) {
@@ -74,7 +73,7 @@ public class TestSearchFilter {
     }
   }
 
-  @Test(invocationCount = 6)
+  @Test
   public void TestSearchByPayee() {
 
     // Create Search Filter Page object
@@ -93,7 +92,7 @@ public class TestSearchFilter {
     Assert.assertTrue(elements.size() == 2);
   }
 
-  @Test(invocationCount = 6)
+  @Test
   public void TestSearchByAccountAndExpenditurePayee() {
 
     // Create Search Filter Page object

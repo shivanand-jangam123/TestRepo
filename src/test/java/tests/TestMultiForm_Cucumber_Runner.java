@@ -33,7 +33,7 @@ public class TestMultiForm_Cucumber_Runner<CucumberFeatureWrapper> extends BaseT
     browserFactory = new BrowserFactory();
     browserFactory.openBrowser("chrome");
   }
-  
+
   @AfterMethod
   public void closeBrowser() {
     browserFactory.closeTest();
